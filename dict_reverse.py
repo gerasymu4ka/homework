@@ -7,5 +7,4 @@ for k, v in d1.items():
 d2 = dict(d)
 print(d2)
 
-
 #result {33: 3, 11: 1, 22: 2}
