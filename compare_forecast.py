@@ -21,18 +21,15 @@ with open('compare_forecast.txt', 'a') as cf:
     dtt = {}                        #dtt means date time temperature
     dtt['date time'] = dt[:19]
     dtt['temperature'] = converted['main']['temp']
-    print 'Weather now: ', '\n', dtt
     
     cf.writelines('Weather now: ' + '\n')
     cf.writelines(str(dtt))
     cf.writelines('\n')
     
     with open('forecast5.txt', 'r') as f5:
-        print 'Temperature predicted for today: '
         cf.writelines('Temperature predicted for today: ' + '\n')
         for line in f5:
             if str(now.date()) in line:
-                print(line)
                 cf.writelines(line)
 
 
