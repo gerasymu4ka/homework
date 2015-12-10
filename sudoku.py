@@ -23,21 +23,49 @@ data = [
 [0, 0, 6, 0, 0, 4, 0, 0, 5]
 ]
 def rmnl(data):
+    fd = []
+    for x, line in enumerate(data):
+        for y, cell in enumerate(line):
+
+            if cell == 0:
+                for i in range(1, 10):   
+                    cell = i
+                    
+                    #nextcell = line[(y+1)%len(line)]
+                    if cell in line:
+                        cell = 0     
+
+            print L
+        
+                        
+        line[y] = cell
+        
+        print line        
+        fd.append(line)
+        
+    print fd
+            
+                    
+            
     
-    for el in data:
-        lst = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-        for e in el:
-            if e in lst:
-                e = e
-                lst.remove(e)            
-                
-            if e == 0:
-                e = lst[0]
-                lst.remove(e)
-               
-                if e in el:
-                    e = 0
-        print tmp
+
+##    for el in data:
+##        lst = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+##        for e in el:
+##            if e in lst:
+##                e = e
+##                lst.remove(e)
+##                print e
+##               
+##            if e == 0:
+##                e = lst[0]
+##                lst.remove(e)
+##               
+##                if e in el:
+##                    e = 0
+##                print e
+##           
+##            print el
 
 
 #def rm_num_col(data):
