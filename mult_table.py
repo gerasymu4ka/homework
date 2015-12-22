@@ -23,13 +23,16 @@
 ##-----------------------------------------------
 ## 12| 24| 36| 48| 60| 72| 84| 96|108|120|132|144
 
-t = 12
 
-values = [[str(x*y) for x in xrange(1, t+1)] for y in xrange(1, t+1)]
 
-for row in values:
-    print ('|'.join(row))
-    print ('-'*len(row))
+def table(t):
 
+	values = [[str(x*y) for x in xrange(1, t+1)] for y in xrange(1, t+1)]
+
+	for row in values:
+	    print ('|'.join(row))
+	    print ('-'*len(row))
+
+	return
 
     

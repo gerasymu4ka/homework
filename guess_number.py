@@ -18,6 +18,6 @@ for i in range(1, 6):
         num == guess
         print('HURRAH! YOU WIN!')
         break
-    i += 1
+
 else:
     print('LOOSER!')
